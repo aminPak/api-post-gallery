@@ -29,3 +29,15 @@ function fetch_api_posts()
 
     return $posts;
 }
+
+// Load Font Awesome to plugin if not loaded
+function apg_check_font_awesome()
+{
+    $font_awesome_version = '6';
+
+    // Check if Font Awesome handle is not already registered or enqueued
+    if (!wp_style_is('apg-font-awesome', 'registered') && !wp_style_is('apg-font-awesome', 'enqueued')) {
+        echo '<script src="https://kit.fontawesome.com/b53022b73f.js" crossorigin="anonymous"></script>';
+    }
+}
+add_action('wp_enqueue_scripts', 'apg_check_font_awesome', 5); // Priority 5 to run early

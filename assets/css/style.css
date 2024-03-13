@@ -51,6 +51,7 @@
 .apg-slider-next:hover,
 .apg-slider-next:focus {
   position: relative;
+  color: #01a982;
   cursor: pointer;
   bottom: 50%;
   width: 40px;
@@ -65,11 +66,12 @@
 .apg-slider-next:focus {
   background: #01a982;
   color: #ffffff;
+  border: none;
 }
 
-.apg-slider-prev span,
-.apg-slider-next span {
-  color: #01a982;
+.apg-slider-prev i,
+.apg-slider-next i {
+  color: inherit;
 }
 
 .apg-slider-prev span:hover,
@@ -152,9 +154,8 @@
 }
 
 .apg-post-item .cta-btn {
-  position: absolute;
-  bottom: 15px;
-  margin-top: 15px;
+  position: relative;
+  margin-top: 25px;
 }
 
 .apg-post-item .cta-btn a {
@@ -173,7 +174,7 @@
   background-position: 0 50%;
 }
 
-.apg-post-item .cta-btn a span {
+.apg-post-item .cta-btn a i {
   vertical-align: middle;
   font-size: 17px;
 }

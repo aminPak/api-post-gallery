@@ -44,8 +44,5 @@ After activation, you can use the `[apg_posts]` shortcode to display the post ga
 ## Acknowledgements
 
 - [WordPress](https://wordpress.org/)
-- # [Slick Slider](https://kenwheeler.github.io/slick/)
-
-# api-post-gallery
-
-API Post Gallery is a WordPress plugin that fetches posts from an external API and displays them in a sleek, responsive gallery format on your WordPress site.
+- [Slick Slider](https://kenwheeler.github.io/slick/)
+- [Font Awesome](https://fontawesome.com/)

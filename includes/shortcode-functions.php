@@ -47,14 +47,14 @@ function apg_render_posts_shortcode()
             echo '<span class="apg-meta-item"><span> | ' . esc_html($post['category']) . '</span></span>';
             echo '</div><div class="apg-carousel-excerpt">';
             echo '<p>' . esc_html($excerpt) . '...</p></div>';
-            echo '<div class="cta-btn"><a href="' . esc_url($post['url']) . '" class="apg-read-more" target="_blank">Read more <span class="dashicons dashicons-arrow-right-alt2"></span></a></div>';
+            echo '<div class="cta-btn"><a href="' . esc_url($post['url']) . '" class="apg-read-more" target="_blank">Read more <i aria-hidden="true" class="fas fa-chevron-right"></i></a></div>';
             echo '</div></div>';
         }
 
         // Slider navigation and progress bar.
         echo '</div><div class="progress"><div class="progress-bar"></div></div>';
-        echo '<div class="apg-buttons"><button class="apg-slider-prev"><span class="dashicons dashicons-arrow-left-alt"></span></button>';
-        echo '<button class="apg-slider-next"><span class="dashicons dashicons-arrow-right-alt"></span></button></div>';
+        echo '<div class="apg-buttons"><button class="apg-slider-prev"><i aria-hidden="true" class="fas fa-chevron-left"></i></button>';
+        echo '<button class="apg-slider-next"><i aria-hidden="true" class="fas fa-chevron-right"></i></button></div>';
         echo '</div>'; // Close the wrapper for the posts slider.
     }
 
