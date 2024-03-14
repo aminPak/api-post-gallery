@@ -67,6 +67,7 @@
   background: #01a982;
   color: #ffffff;
   border: none;
+  outline: none;
 }
 
 .apg-slider-prev i,
@@ -177,4 +178,95 @@
 .apg-post-item .cta-btn a i {
   vertical-align: middle;
   font-size: 17px;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100%; /* Prevent height change */
+}
+
+.apg-modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  background-color: rgb(2 53 48 / 91%);
+}
+
+.apg-modal .apg-post-mdl-content {
+  font-family: "Lato", Sans-serif;
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px 35px 58px 35px;
+  border: 1px solid #888;
+  width: 800px;
+}
+
+.apg-modal .apg-post-mdl-close {
+  color: #74aca7;
+  float: right;
+  font-size: 28px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.apg-modal .apg-post-mdl-close:hover,
+.apg-modal .apg-post-mdl-close:focus {
+  color: #0e3f3b;
+  text-decoration: none;
+  cursor: pointer;
+}
+.apg-modal .apg-post-mdl-img{
+  display: block;
+  box-shadow: 10px 7px 18px -12px #ccc;
+  max-width: 100%;
+}
+.apg-post-mdl-meta{
+  width: 100%;
+  padding: 15px 0;
+}
+.apg-post-mdl-meta span{
+  color: #afadad;
+  margin-right: 15px;
+  font-family: "Lato", Sans-serif;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.apg-post-mdl-meta span:first-child{
+  border-right: 3px solid #19474378;
+  padding-right: 15px;
+}
+
+.apg-post-mdl-slug{
+  font-family: "Lato", Sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #737373;
+}
+
+.apg-modal .apg-post-mdl-title {
+  font-family: "Lato", Sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.apg-modal .apg-post-mdl-body {
+  font-family: "Lato", Sans-serif;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .apg-modal .apg-post-mdl-content {
+    width: 90%;
+  }
+  .apg-modal .apg-post-mdl-content{
+    margin: 14% auto;
+  }
 }

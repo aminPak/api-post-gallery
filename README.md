@@ -25,21 +25,25 @@ This plugin's compatibility has been tested with the Elementor page builder. Whi
 5. After the file has uploaded, click the `Install Now` button.
 6. Once installed, click the `Activate Plugin` link to activate API Post Gallery on your WordPress site.
 
-## Demo
-
-Experience the plugin in action! Check out the [API Post Gallery Demo](https://aminpak.com/api-post-gallery/).
-
 ## Usage
 
 After activation, you can use the `[apg_posts]` shortcode to display the post gallery wherever shortcodes are supported within your WordPress site. Simply add the shortcode to your posts, pages, or widgets:
 [apg_posts]
+
+## Demo
+
+Experience the plugin in action! Check out the [API Post Gallery Demo](https://aminpak.com/api-post-gallery/).
+
+## Changelog
+
+For a detailed list of changes and updates, see the [CHANGELOG.md](./CHANGELOG.md).
 
 ## Author
 
 **Amin Pak**
 
 - Website: [https://aminpak.com/](https://aminpak.com/)
-- GitHub: [@aminPak](#)
+- GitHub: [@aminPak](https://github.com/aminPak)
 
 ## Acknowledgements
 

@@ -20,7 +20,7 @@ function fetch_api_posts()
 
     $response = wp_remote_get('https://jsonplaceholder.org/posts');
     if (is_wp_error($response)) {
-        return []; // Return an empty array in case of error
+        return [];
     }
 
     $posts = json_decode(wp_remote_retrieve_body($response), true);
@@ -29,6 +29,28 @@ function fetch_api_posts()
 
     return $posts;
 }
+
+//Fetches detailed information for a single post from an external API to show in a modal.
+function apg_fetch_post_details()
+{
+    $post_id = isset($_POST['post_id']) ? intval($_POST['post_id']) : 0;
+    $response = wp_remote_get('https://jsonplaceholder.org/posts/' . $post_id);
+
+    if (is_wp_error($response)) {
+        wp_send_json_error('Failed to fetch post details');
+        return;
+    }
+    $post_details = json_decode(wp_remote_retrieve_body($response), true);
+
+    if (!empty($post_details)) {
+        wp_send_json_success($post_details); // Send the details to the client-side
+    } else {
+        wp_send_json_error('Post details are empty');
+    }
+}
+
+add_action('wp_ajax_fetch_post_details', 'apg_fetch_post_details');
+add_action('wp_ajax_nopriv_fetch_post_details', 'apg_fetch_post_details');
 
 // Load Font Awesome to plugin if not loaded
 function apg_check_font_awesome()
