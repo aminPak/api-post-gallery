@@ -9,6 +9,7 @@
  * 
  * @return array An array of posts fetched from the external API or an empty array on failure.
  */
+
 function fetch_api_posts()
 {
     $transient_key = 'apg_api_posts';

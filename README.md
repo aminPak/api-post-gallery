@@ -12,11 +12,11 @@ API Post Gallery is a WordPress plugin that fetches posts from an external API a
 
 ## Compatibility
 
-This plugin's compatibility has been tested with the Elementor page builder. While it should work well with Elementor, there may be front-end issues when using other page builders. We plan to address and fix these incompatibilities in future versions to ensure broad compatibility across various page builders.
+This plugin's compatibility has been tested with the Elementor page builder. While it should work well with Elementor, there may be front-end issues when using other page builders. ​It planned to address and fix these incompatibilities in future versions to ensure broad compatibility across various page builders.
 
 ## Installation
 
-### Through WordPress Admin Dashboard
+### Uploading in WordPress Dashboard
 
 1. Log in to your WordPress admin dashboard.
 2. Navigate to `Plugins` > `Add New`.
@@ -24,6 +24,13 @@ This plugin's compatibility has been tested with the Elementor page builder. Whi
 4. Click the `Choose File` button, navigate to the downloaded `api-post-gallery.zip` file on your computer, and select it.
 5. After the file has uploaded, click the `Install Now` button.
 6. Once installed, click the `Activate Plugin` link to activate API Post Gallery on your WordPress site.
+
+### Using FTP
+
+1. Download api-post-gallery.zip.
+2. Extract the api-post-gallery directory to your computer.
+3. Upload the api-post-gallery directory to the /wp-content/plugins/ directory.
+4. Activate the plugin in the Plugin dashboard.
 
 ## Usage
 
